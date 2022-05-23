@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -69,7 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag_content',
+                'bag.contexts.bag_contents',
             ],
         },
     },
